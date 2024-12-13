@@ -53,8 +53,9 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
-     background-color: white;
-     background: url( https://raw.githubusercontent.com/najmajinow/masi-hardware/refs/heads/main/home%20page.JPG             );
+    background-color: white;
+    background: url('https://raw.githubusercontent.com/najmajinow/masi-hardware/refs/heads/main/home%20page.JPG') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the whole section */
 }
 
 .hero-image {
@@ -70,7 +71,7 @@ nav ul li a {
 /* Styling for the text over the image */
 .hero-content {
     z-index: 1;
-    color: black;
+    color: red;
 }
 
 .hero-content h1 {
@@ -78,9 +79,11 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.hero-content p {
-    font-size: 30px;
+.hero-content h1 {
+    font-size: 60px;
 }
+
+
 
 
 
