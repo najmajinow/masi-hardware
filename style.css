@@ -71,7 +71,7 @@ nav ul li a {
 /* Styling for the text over the image */
 .hero-content {
     z-index: 1;
-    color: black;
+    color: gray;
 }
 
 .hero-content h1 {
