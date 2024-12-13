@@ -1,9 +1,10 @@
+
 // Mobile Menu Toggle
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const nav = document.querySelector('nav');
 
 hamburgerMenu.addEventListener('click', () => {
-    nav.classList.toggle('open');
+    nav.classList.toggle('open');  // Toggle the 'open' class to show/hide the menu
 });
 
 // Scroll-to-Top Button
