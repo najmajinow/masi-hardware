@@ -48,7 +48,7 @@ nav ul li a {
 /* Hero Section with Image */
 .hero {
     position: relative;
-    height: 150vh; /* Make the section fill the entire screen */
+    height: 100vh; /* Make the section fill the entire screen */
     display: flex;
     justify-content: center;
     align-items: center;
