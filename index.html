@@ -8,74 +8,130 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Masi Hardware</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h2>Your Trusted Hardware Partner</h2>
-            <p>High-quality products and services for all your construction needs.</p>
+            
             <a href="#about" class="cta-button">Learn More About Us</a>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <h3>Who We Are</h3>
-                <p>At Masi Hardware, we provide premium tools and materials to help you with your construction, renovation, and DIY projects. We are committed to providing high-quality products and expert services to meet all your hardware needs.</p>
-            </div>
-            
-        </div>
-    </section>
+<!-- About Us Section -->
+<section id="about-us" class="about-us">
+    <style>
+        .about-us p {
+            margin-bottom: 20px; /* Adds space between paragraphs */
+        }
+    </style>
+    <div class="container">
+        <h2>About Masi Hardware</h2>
+        <p>
+            Welcome to Masi Hardware, your trusted local hardware store in Masiphumelele. 
+            We are dedicated to serving the community with high-quality tools, building materials, 
+            and hardware essentials to support every construction and DIY project. Our commitment 
+            is to provide top-notch products at affordable prices.
+        </p>
+        <p>
+            At Masi Hardware, we understand the unique needs of Masiphumelele's builders, contractors, 
+            and homeowners. That’s why we stock a wide range of supplies, from durable hand tools 
+            and power tools to paint, plumbing fixtures, and electrical components. Whether you’re 
+            renovating, building from scratch, or tackling a simple repair, we’ve got you covered.
+        </p>
+        <p>
+            With a focus on exceptional customer service, we aim to be your go-to destination for 
+            hardware solutions. Visit Masi Hardware today and experience the difference of shopping 
+            with a community-focused store that values quality, affordability, and trust. 
+        </p>
+    </div>
+</section>
 
-    <section id="products" class="product-gallery">
+
+<!-- Products Section -->
+<section id="products" class="products">
+    <div class="container">
         <h2>Our Products</h2>
-        <div class="gallery-container">
-            <div class="product">
-                <img src="product1.jpg" alt="Hammer">
-                <h3>Hammer</h3>
-                <p>Heavy-duty hammer for construction and home improvement projects.</p>
-            </div>
-            <div class="product">
-                <img src="product2.jpg" alt="Drill">
-                <h3>Drill</h3>
-                <p>High-performance drill for all your drilling needs.</p>
-            </div>
-            <div class="product">
-                <img src="product3.jpg" alt="Screwdriver Set">
-                <h3>Screwdriver Set</h3>
-                <p>Comprehensive screwdriver set for various tasks.</p>
-            </div>
-            <div class="product">
-                <img src="product4.jpg" alt="Wrench Set">
-                <h3>Wrench Set</h3>
-                <p>Durable wrench set for precise tightening and loosening.</p>
-            </div>
-            <div class="product">
-                <img src="product5.jpg" alt="Paint Brushes">
-                <h3>Paint Brushes</h3>
-                <p>Set of professional paint brushes for smooth and clean finishes.</p>
-            </div>
-            <!-- Add more products as necessary -->
-        </div>
-    </section>
 
+        <!-- Construction Products -->
+        <h3>Construction Supplies</h3>
+        <img src="images/construction.jpg" alt="Construction Supplies" class="industry-image">
+        <ul>
+            <li>Cement and concrete mixes</li>
+            <li>Bricks, blocks, and masonry supplies</li>
+            <li>Roofing materials and insulation</li>
+            <li>Wood and carpentry supplies</li>
+            <li>Hand tools and power tools</li>
+        </ul>
+
+        <!-- Electrical Products -->
+        <h3>Electrical Supplies</h3>
+        <img src="images/electrical.jpg" alt="Electrical Supplies" class="industry-image">
+        <ul>
+            <li>Electrical wiring and cables</li>
+            <li>Switches, sockets, and circuit breakers</li>
+            <li>Lighting fixtures and bulbs</li>
+            <li>Conduits and electrical boxes</li>
+            <li>Multimeters and electrical tools</li>
+        </ul>
+
+        <!-- Plumbing Products -->
+        <h3>Plumbing Supplies</h3>
+        <img src="images/plumbing.jpg" alt="Plumbing Supplies" class="industry-image">
+        <ul>
+            <li>Pipes and pipe fittings</li>
+            <li>Plumbing fixtures and faucets</li>
+            <li>Water heaters and tanks</li>
+            <li>Drainage systems and accessories</li>
+            <li>Sealants, adhesives, and tapes</li>
+        </ul>
+
+        
+    </div>
+</section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>Have a question or need assistance? Reach out to us below!</p>
         <form action="#" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
