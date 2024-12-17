@@ -68,29 +68,25 @@ nav ul li a {
     z-index: -1; /* Put the image behind other content */
 }
 
-/* Styling for the text over the image */
-.hero-content {
-    z-index: 1;
-    color: red;
+/* Hero Section with Image */
+.hero {
+    position: relative;
+    height: 100vh; /* Make the section fill the entire screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://raw.githubusercontent.com/najmajinow/masi-hardware/refs/heads/main/home%20page.JPG') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the whole section */
 }
 
-.hero-content h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-.hero-content h1 {
-    font-size: 60px;
-}
-
-
-
+/* Media Query for Mobile Screens */
 @media (max-width: 768px) {
     .hero {
-        background-size: contain; /* Ensures the whole image fits within the section */
-        background-repeat: no-repeat; /* Prevents the image from repeating */
-        background-position: center; /* Centers the image on the screen */
-        height: 100vh; /* Keeps the section the height of the viewport */
+        background-size: contain; /* Fit the whole image inside the section */
+        background-repeat: no-repeat; /* Prevent tiling */
+        background-position: center; /* Keep the image centered */
+        height: 100vh; /* Match viewport height */
     }
 }
 
