@@ -87,11 +87,13 @@ nav ul li a {
 
 @media (max-width: 768px) {
     .hero {
-        background-size: contain; /* Fit the image within the section */
-        background-position: center top; /* Align the image from the top */
-        height: 60vh; /* Reduce section height for mobile */
+        background-size: contain; /* Ensures the whole image fits within the section */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-position: center; /* Centers the image on the screen */
+        height: 100vh; /* Keeps the section the height of the viewport */
     }
 }
+
 
 
 
