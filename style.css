@@ -39,12 +39,6 @@ nav ul li a {
     font-size: 18px;
 }
 
-
-
-
-
-
-
 /* Hero Section with Image */
 .hero {
     position: relative;
@@ -54,41 +48,53 @@ nav ul li a {
     align-items: center;
     text-align: center;
     background-color: white;
-    background: url('https://raw.githubusercontent.com/najmajinow/masi-hardware/refs/heads/main/home%20page.JPG') no-repeat center center;
-    background-size: cover; /* Ensures the image covers the whole section */
+    background: url('https://raw.githubusercontent.com/najmajinow/masi-hardware/refs/heads/main/home%20page.JPG') no-repeat center center; /* Ensure no repeat and center */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-attachment: fixed; /* Optional: Keeps background fixed while scrolling */
 }
 
-.hero-image {
-    position: absolute; /* Position the image behind the text */
-    top: 0;
-    left: 0;
-    width: 100%; /* Make the image take up the full width */
-    height: 100%; /* Make the image take up the full height */
-    object-fit: cover; /* Ensure the image covers the section area without distortion */
-    z-index: -1; /* Put the image behind other content */
+/* For mobile devices (ensure background image fits properly) */
+@media (max-width: 800px) {
+    .hero {
+        background-size: cover; /* Ensure the image covers the entire section */
+        background-repeat: no-repeat; /* Prevent image repetition */
+        background-position: center; /* Keep the image centered */
+        height: 100vh; /* Keeps the section at the height of the viewport */
+    }
 }
 
-/* Hero Section with Image */
-.hero {
-    position: relative;
-    height: 100vh; /* Make the section fill the entire screen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: url('https://raw.githubusercontent.com/najmajinow/masi-hardware/refs/heads/main/home%20page.JPG') no-repeat center center;
-    background-size: cover; /* Ensures the image covers the whole section */
+/* Styling for the text content inside .hero */
+.hero-content {
+    z-index: 1; /* Keeps content above the background */
+    color: white; /* Change the color of text to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for better visibility */
 }
+
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #bd2a10; /* Change the heading color (e.g., Tomato Red) */
+}
+
+
+
+.hero-content .cta-button:hover {
+    background-color: #f55b5b; /* Darker red on hover */
+}
+
+
+
+
 
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
     .hero {
-        background-size: contain; /* Fit the whole image inside the section */
-        background-repeat: no-repeat; /* Prevent tiling */
-        background-position: center; /* Keep the image centered */
-        height: 100vh; /* Match viewport height */
+        background-size: cover; /* Keep the cover behavior consistent */
+        background-repeat: no-repeat; /* Ensure no tiling or repetition */
+        background-position: center; /* Center the image */
     }
 }
+
 
 
 
