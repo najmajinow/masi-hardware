@@ -56,7 +56,7 @@ nav ul li a {
 /* For mobile devices (ensure background image fits properly) */
 @media (max-width: 800px) {
     .hero {
-        background-size: cover; /* Ensure the image covers the entire section */
+        background-size: contain; /* Use 'contain' to ensure the whole image fits */
         background-repeat: no-repeat; /* Prevent image repetition */
         background-position: center; /* Keep the image centered */
         height: 100vh; /* Keeps the section at the height of the viewport */
@@ -76,24 +76,15 @@ nav ul li a {
     color: #bd2a10; /* Change the heading color (e.g., Tomato Red) */
 }
 
-
-
-.hero-content .cta-button:hover {
-    background-color: #f55b5b; /* Darker red on hover */
-}
-
-
-
-
-
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
     .hero {
-        background-size: cover; /* Keep the cover behavior consistent */
-        background-repeat: no-repeat; /* Ensure no tiling or repetition */
+        background-size: contain; /* Adjusted for mobile */
+        background-repeat: no-repeat; /* Prevent image repetition */
         background-position: center; /* Center the image */
     }
 }
+
 
 
 
