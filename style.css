@@ -71,7 +71,7 @@ nav ul li a {
 /* Styling for the text over the image */
 .hero-content {
     z-index: 1;
-    color: gray;
+    color: red;
 }
 
 .hero-content h1 {
@@ -85,6 +85,13 @@ nav ul li a {
 
 
 
+@media (max-width: 768px) {
+    .hero {
+        background-size: contain; /* Fit the image within the section */
+        background-position: center top; /* Align the image from the top */
+        height: 60vh; /* Reduce section height for mobile */
+    }
+}
 
 
 
