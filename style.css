@@ -39,7 +39,7 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Hero Section with Image */
+/* Hero Section with Background Image */
 .hero {
     position: relative;
     height: 100vh; /* Make the section fill the entire screen */
@@ -51,6 +51,11 @@ nav ul li a {
     background: url('https://raw.githubusercontent.com/najmajinow/masi-hardware/refs/heads/main/home%20page.JPG') no-repeat center center; /* Ensure no repeat and center */
     background-size: cover; /* Ensures the image covers the entire section */
     background-attachment: fixed; /* Optional: Keeps background fixed while scrolling */
+}
+
+/* Hide any images inside .hero that might appear on top */
+.hero img {
+    display: none; /* Hides any img elements inside the hero section */
 }
 
 /* For mobile devices (ensure background image fits properly) */
