@@ -47,48 +47,51 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: white;
-    background: url('https://raw.githubusercontent.com/najmajinow/masi-hardware/refs/heads/main/home%20page.JPG') no-repeat center center; /* Ensure no repeat and center */
+    background-color: white; /* Fallback color in case background image is not loaded */
+    background: url('https://raw.githubusercontent.com/najmajinow/masi-hardware/refs/heads/main/home%20page.JPG') no-repeat center center; /* Background image */
     background-size: cover; /* Ensures the image covers the entire section */
-    background-attachment: fixed; /* Optional: Keeps background fixed while scrolling */
+    background-attachment: fixed; /* Keeps background fixed while scrolling */
 }
 
-/* Hide any images inside .hero that might appear on top */
+/* Ensure that no images are displayed inside the hero section */
 .hero img {
-    display: none; /* Hides any img elements inside the hero section */
+    display: none; /* This will hide any img element inside .hero */
 }
 
 /* For mobile devices (ensure background image fits properly) */
 @media (max-width: 800px) {
     .hero {
-        background-size: contain; /* Use 'contain' to ensure the whole image fits */
-        background-repeat: no-repeat; /* Prevent image repetition */
+        background: url('https://raw.githubusercontent.com/najmajinow/masi-hardware/refs/heads/main/home%20page.JPG') no-repeat center center; /* Reapply the background image */
+        background-size: cover; /* Ensure the background image covers the section */
         background-position: center; /* Keep the image centered */
-        height: 100vh; /* Keeps the section at the height of the viewport */
+        background-attachment: scroll; /* Prevent background-attachment: fixed on mobile */
+        height: 100vh; /* Ensure the section still fills the viewport height */
     }
 }
 
 /* Styling for the text content inside .hero */
 .hero-content {
-    z-index: 1; /* Keeps content above the background */
-    color: white; /* Change the color of text to white */
+    z-index: 1; /* Ensures content is above the background */
+    color: white; /* White text for visibility */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for better visibility */
 }
 
 .hero-content h1 {
     font-size: 60px;
     margin-bottom: 20px;
-    color: #bd2a10; /* Change the heading color (e.g., Tomato Red) */
+    color: #bd2a10; /* Change heading color to Tomato Red */
 }
 
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
     .hero {
-        background-size: contain; /* Adjusted for mobile */
+        background-size: cover; /* Ensures background scales correctly on mobile */
         background-repeat: no-repeat; /* Prevent image repetition */
-        background-position: center; /* Center the image */
+        background-position: center; /* Keeps the background centered */
     }
 }
+
+
 
 
 
